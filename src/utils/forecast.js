@@ -14,10 +14,10 @@ const forecast = (lat, long, callback) => {
         dailyData.summary +
           ` It is currently ${
             body.currently.temperature
-          } degrees out. There is ${body.currently.precipProbability *
-            100} % chance of rain. The high is ${
+          } degrees out. The high is ${
             dailyData.temperatureHigh
-          } and the low is ${dailyData.temperatureLow}`
+          } with a low of ${dailyData.temperatureLow}. There is ${body.currently
+            .precipProbability * 100} % chance of rain.`
       );
     }
   });
