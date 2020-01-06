@@ -1,12 +1,20 @@
 <!DOCTYPE html>
+
 <html>
 
-<head> </head>
+<head>
+    <title>Help</title>
+    <link rel="icon" href="/img/weather.png">
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
 
 <body>
-    <h1>{{>header}}</h1>
-    <p>{{helpText}}</p>
-    <p>{{>footer}}</p>
+    <div class="main-content">
+        {{>header}}
+        <p>{{helpText}}</p>
+    </div>
+
+    {{>footer}}
 </body>
 
 </html>
